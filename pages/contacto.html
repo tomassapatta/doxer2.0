@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <main class="contenedor">
+        
+        <header class="logo">
+            <h1>Doxer Socks</h1>
+            <h2>Tienda Oficial</h2>
+        </header>
+        
+        <nav class="barra navegacion">
+            <ul>
+                
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="./productos.html">Productos</a>
+                </li>
+                <li>
+                    <a href="./ubicacion.html">Encontranos</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+                
+            </ul>
+            <div class="hide">
+                <i class="fa fa-bars" aria-hidden="true"></i> Menu
+            </div>
+        </nav>
+        
+        <section class="seccion form">
+            <div class="formulario">
+                Formulario de Contacto
+                </div>
+                <form
+            action="contacto.html"
+            method="POST"
+            enctype="application/x-www-form-urlencoded"
+            >
+            <div class="elemento">
+            <label for="nombre">Nombre:</label>
+            <input
+            type="text"
+            name="Nombre"
+            id="Nombre"
+            placeholder="Escribe Tu nombre"
+            />
+            </div>
+            <br />
+        
+            <div class="elemento">
+            <label for="apellido">Apellido:</label>
+            <input
+            type="text"
+            name="Apellido"
+            id="Apellido"
+            placeholder="Escribe tu Apellido"
+            /></div>
+            <br />
+        
+            <div class="elemento">
+            <label for="Email">Email:</label>
+            <input
+            type="text"
+            name="Email"
+            id="Email"
+            placeholder="jperez@gmail.com"
+            /></div>
+            <br />
+            
+            <div class="news">
+                <span>Queres recibir el Newsletter?</span>
+                <input class="newsSi" type="radio" id="Si" name="news" value="Y" />
+                <span>Si</span>
+                <input class="newsSi" type="radio" id="No" name="news" value="Y" />
+                <span>No</span>
+            </div>
+            <div>
+            <textarea class="comentarios"
+            name="Comentarios"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Escribe un comentario"
+            ></textarea></div>
+            <br />
+            <div class="botones">
+            <input class="botones" type="reset" value="Resetear Formulario" />
+            <input class="botones" type="submit" value="Enviar Formulario" />
+            </div>
+            </form>
+        </div>
+        </section>
+        
+        <footer class="footer">
+            <div class="contenedorFooter">
+                <div class="caja1">
+                    <a href="#" class="links"><p>Todos los derechos Reservados</p></a>
+                
+                    <a href="#" class="links"><p>Políticas de Privacidad</p></a>
+                
+                    <a href="#" class="links"><p>Protocolos COVID-19</p></a>
+                
+                    <a href="#" class="links"><p>Términos y Condiciones</p></a>
+                
+                </div>
+                <div class="caja2">
+                    <a href="#" class="links"><p>Preguntas Frecuentes</p></a>
+                    <a href="#" class="links"><p>Cambios</p></a>
+                    <a href="#" class="links"><p>Devoluciones</p></a>
+                    <a href="#" class="links"><p>Arrepentimiento</p></a>
+                </div>
+                <div class="caja3">
+                    <span>Seguinos en nuestras redes sociales</span></br>
+                    <a class="rrss" href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="rrss" href="https://www.instagram.com/doxersocks/"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="rrss" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="rrss" href="https://api.whatsapp.com/send?phone=541131121020"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </footer>
+    
+    </main>
+</body>
+</html>
