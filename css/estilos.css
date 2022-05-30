@@ -1,84 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 
-/* MAQUETACION CON GRID */
-
-.contenedor { 
-    display: grid;
-    width: 100%;
-    grid-template-areas: "titulo titulo nave nave"
-                        "menu menu menu menu"
-                        "menu menu menu menu"
-                        "pie pie pie pie";
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url(../img/fondo.jpg);
-}
-
-
-/* HEADER Y NAV*/
-
-.logo {
-    height: 100px;
-    grid-area: titulo;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-h1  {
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-h2 {
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.barra {
-    height: 100px;
-    grid-area: nave;
-}
-
-.seccion { 
-    min-height: 100vh;
-    grid-area: menu;
-}
-
-.footer { 
-    background-color: grey;
-    min-height: 200px;
-    grid-area: pie;
-}
-
-.navegacion ul {
-    list-style: none;
-    display: flex;
-    position: fixed;
-}
-
-li a{
-    display: inline-block;
-    padding: 35px 5px;
-    text-decoration: none;
-    margin-left: 35px;
-    color: black;
-}
-
-.barra a:hover {
-    color: beige;
-}
-
-
-
-.hide {
-    padding: 16px;
-    font-size: 22px;
-    color: black;
-    cursor: pointer;
-    display: none;
-}
-
+/* inicio */
 
 .main{
     height: 500px;
@@ -86,15 +7,6 @@ li a{
     background-image: url(/img/fondo.jpg);
     background-size: cover;
 }
-/* main */
-
-.nosotros{
-    height: 500px;
-    background-color: grey;
-    background-image: url(/img/fondo.jpg);
-    background-size: cover;
-}
-
 .mcenter {
     text-align: center;
     padding: 11%;
@@ -115,11 +27,12 @@ li a{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
-
     /* nosotros */
-
-.nosotros { 
+.nosotros{
     height: 500px;
+    background-color: grey;
+    background-image: url(/img/fondo.jpg);
+    background-size: cover;
 }
 
 .nleft img{
@@ -133,37 +46,62 @@ li a{
     background-position: center;
 }
 
-/* MENU PRODUCTOS */
+/* productos */
 
-img {
-    height: 300px;
-}
 
-.tituloProductos { 
-    margin: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: normal;
-    text-transform: capitalize;
+.productos { 
     text-align: center;
+    font-size: xx-large;
+    color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.productos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+/* ubicacion */
+
+.ubicacion { 
+    height: 500px;
+    background-image: url(/img/fondo.jpg);
+    background-size: cover;
 }
 
-.fotos {
-    padding: 15px;
+.tituloEncontranos { 
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.fotos:hover   {
-    transform: scale(1.5);
-    transition: all 1s;
+.menuEncontranos { 
+    margin-left: 28%;
 }
+
+/* contacto */
+
+.tituloContacto { 
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contacto { 
+    height: 500px;
+    background-image: url(/img/fondo.jpg);
+    background-size: cover;
+}
+
+.formContacto { 
+    margin-left: 40%;
+    margin-top: 5%; 
+}
+
+.emailContacto , .motivoContacto{ 
+    width: 30%;
+}
+
 
 /* footer */
-.footer{
+.footer {
     height: 200px;
     background-color: black;
 }
@@ -185,71 +123,3 @@ img {
 }
 
 
-iframe {
-    padding: 0% 28% 10% 28%;
-}
-.encontranos { 
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-top: 50px;
-}
-
-
-/* pagina contacto */
-.form {
-    width: 410px;
-    text-align: center;
-    background-color: rgba(221, 190, 169, 0.5);
-    border-radius: 10px;
-    margin: auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-
-.formulario{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 5px;
-    text-align: center;
-    color: black;
-    margin-bottom: 5px;
-}
-
-label {
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: oblique;
-}
-
-input { 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 10px;
-    font-size: 15px;
-    text-align: center;
-    color: black;
-    width: 90%;
-    background-color: #ffe8d6;
-    border-radius: 10px;
-}
-
-.news .newsSi {
-    text-align: center;
-    width: fit-content;
-}
-
-.botones {
-    padding: 10px;
-    margin-bottom: 10px;
-
-}
-
-.news {
-    font-size: 18px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: 20px;
-}
-
-.comentarios {
-    border-radius: 10px;
-    background-color: #ffe8d6;
-    text-align: center;
-}
