@@ -46,6 +46,16 @@
     background-position: center;
 }
 
+.fotoNosotros:hover { 
+    transform: scale(1.2);
+    transition: 2s;
+}
+
+.tituloNosotros:hover { 
+    transition: 2s;
+    transform: scale(1.2);
+}
+
 /* productos */
 
 
